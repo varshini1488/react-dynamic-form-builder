@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right top, #f3041866, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #413d3d;
+}
+
+.app {
+  background: linear-gradient(to right top, #764ba2, #cb071790);
+  margin-top: 50px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgb(0, 0, 0);
+  width: 95%;
+  max-width: 850px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #fd0432e2, #e286ac);
+  font-weight: 700;
+}
+
+.form-builder {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #74a3eae4;
+  width: 60%;
+  background-color: #b8dae3b4;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #f20d0d;
+}
+
+.add-btn {
+  background-image: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgb(0, 1, 8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgb(234, 17, 10);
+}
+
+.form-field {
+  background-image: linear-gradient(to right, #667eea, #e1423fe4);
+  border-left: 6px solid #ab0404;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #2e0202;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #860310;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  color: rgb(15, 1, 1);
+  padding: 14px;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 14px;
+  margin-top: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgb(255, 7, 7);
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgb(10, 0, 12);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
